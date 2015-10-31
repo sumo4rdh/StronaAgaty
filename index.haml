@@ -1,0 +1,60 @@
+!!! html
+!!!
+%html{:lang => 'en-GB'}
+	%head
+		%title Agata's flowers
+		%meta{:charset => 'UTF-8'}
+		%meta{:name => 'description', :content => 'A website about skils of Agata Krężałek in flowers'}
+		%meta{:name => 'keywords', :content => 'Fotos, flowers, production'}
+		%meta{:name => 'author', :content => 'Artur Brzozowski'}
+		%link{:rel => 'stylesheet', :type => 'text/css', :href => 'css/bootstrap.min.css'}
+		%link{:rel => 'stylesheet', :type => 'text/css', :href => 'css/style.css'}
+		%script{:src => 'js/bootstrap.js'}
+	%body
+		%nav.navbar.navbar-inverse.navbar-fixed-top	
+		.container	
+			.jumbotron
+				%h1 Folwer is my passion
+				%p I hop it will let you have opinion about my work
+		
+			.row
+				.col-md-4.col-sm-4 
+					%a.thumbnail{:href =>'#'}
+						%img{:src => '', :alt => ''}
+					.caption
+						%h3 Course work
+						%p I wiork with flowers and i will tel something about it
+				.col-md-4.col-sm-4
+					%a.thumbnail{:href =>'#'}
+						%img{:src => '../images/thumb1.jpg', :alt => 'weding foto'}
+					.caption
+						%h3 Weding decorations
+						%p I wiork with flowers and i will tel something about it
+				.col-md-4.col-sm-4 
+					%a.thumbnail{:href =>'#'}
+						%img{:src => '../images/thumb2.jpg', :alt => 'Own composiotion'}
+					.caption
+						%h3 My own realisations
+						%p I wiork with flowers and i will tel something about it
+				
+			.carousell.slide#ideal{'data-ride' => 'carousel'}
+				%ol.carousel-indicators
+					%li.active{'data-target' => 'ideal', 'data-slide-to' => 0}
+					%li{'data-target' => 'ideal', 'data-slide-to' => 0}
+					%li{'data-target' => 'ideal', 'data-slide-to' => 1}
+					%li{'data-target' => 'ideal', 'data-slide-to' => 2}
+					%li{'data-target' => 'ideal', 'data-slide-to' => 3}
+					%li{'data-target' => 'ideal', 'data-slide-to' => 4}
+				.carousel-inner{'role' => 'listbox'}
+					.item.active
+						%img{:src => '', :alt => ''}
+						.carousel-caption 
+					.item
+						%img{:src => '', :alt => ''}
+						.carousel-caption
+					.item.active
+						%img{:src => '', :alt => ''}
+						.carousel-caption 
+					.item
+						%img{:src => '', :alt => ''}
+						.carousel-caption
