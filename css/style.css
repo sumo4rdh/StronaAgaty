@@ -15,3 +15,13 @@ img{
 .thumbnail img:hover {
 	transform:scale(1.05,1.05);
 }
+.zdjecia{
+	padding: 10px;
+	text-align: center;
+	vertical-align: center;
+	margin: 0 auto;
+
+}
+.zdjecia img{
+	
+}

@@ -13,12 +13,13 @@
     <script src='js/app.js'></script>
     <script src='js/control.js'></script>
   </head>
-  <body ng-app="myApp">
-    <div ng-controller="MainController">
-      <div ng-repeat="zdjecia in zdjecias">
-          <h2>{{ zdjecia.info }}</h2>
-         <img ng-src="{{ zdjecia.img }}">
-       </div>
+  <body ng-app='myApp'>
+    <div class='container' ng-controller='MainController'>
+      <div class='row'>
+        <div class='col-lg-12 col-md-12 col-sm-12 zdjecia text-center' ng-repeat='zdjecia in zdjecias'>
+          <img class='img-responsive img-rounded' ng-src='{{ zdjecia.img }}'>
+        </div>
+      </div>
     </div>
   </body>
 </html>
