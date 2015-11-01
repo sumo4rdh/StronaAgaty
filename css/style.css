@@ -1,7 +1,17 @@
-
+body{
+	padding-top: 50px;
+}
 .jumbotron{
 	background-image: url('../images/header.jpg');
 	background-size: cover;
 	min-height: 490px;
 	color: white;
+}
+img{
+
+	-webkit-transition: -webkit-transform 2s;; /* Safari 3.1 to 6.0 */
+    transition: transform 2s;
+}
+.thumbnail img:hover {
+	transform:scale(1.05,1.05);
 }
